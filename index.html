@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOrUS - متجر الخرائط</title>
+  <style>
+    body { font-family: Arial; background: #f4f4f4; margin: 0; padding: 0; }
+    header { background-color: #222; color: white; padding: 20px; text-align: center; }
+    header img { max-height: 80px; display: block; margin: 0 auto 10px; }
+    h1 { margin: 0; text-transform: uppercase; }
+    nav { background: #444; text-align: center; }
+    nav a { color: white; padding: 14px 20px; display: inline-block; text-decoration: none; }
+    nav a:hover { background: #666; }
+    section { padding: 20px; }
+    .product, .review, .about, .payment { background: white; margin-bottom: 20px; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .product img { width: 100%; max-height: 200px; object-fit: cover; border-radius: 10px; }
+    .product h3, .review h4, .about h3, .payment h3 { margin-top: 10px; }
+    .product .price { color: green; font-weight: bold; }
+    .review .stars { color: gold; margin-top: 5px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="HOrUS Logo">
+    <h1>HOrUS</h1>
+    <p>خرائط مميزة لتزيين منزلك أو مكتبك</p>
+  </header>
+
+  <nav>
+    <a href="#showcase">أعمالنا</a>
+    <a href="#products">المنتجات</a>
+    <a href="#reviews">تقييمات العملاء</a>
+    <a href="#about">من نحن</a>
+    <a href="#payment">طرق الدفع</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <section id="showcase">
+    <h2>أعمالنا السابقة</h2>
+    <div class="product">
+      <img src="https://via.placeholder.com/600x300.png?text=عمل+1" alt="عمل 1">
+      <h3>خريطة ثلاثية الأبعاد للقاهرة</h3>
+      <p>تفاصيل دقيقة وجودة طباعة عالية تناسب المنازل والمكاتب الفاخرة.</p>
+      <p class="price">السعر: 250 جنيه</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/600x300.png?text=عمل+2" alt="عمل 2">
+      <h3>خريطة تاريخية للإسكندرية</h3>
+      <p>تصميم أنيق مستوحى من الخرائط القديمة مع لمسة عصرية.</p>
+      <p class="price">السعر: 220 جنيه</p>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>المنتجات المتوفرة</h2>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x200.png?text=خريطة+الأقصى" alt="خريطة">
+      <h3>خريطة المسجد الأقصى</h3>
+      <p class="price">السعر: 180 جنيه</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x200.png?text=خريطة+السويس" alt="خريطة">
+      <h3>خريطة قناة السويس</h3>
+      <p class="price">السعر: 200 جنيه</p>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>تقييمات العملاء</h2>
+    <div class="review">
+      <h4>أحمد من القاهرة</h4>
+      <p>جودة رائعة وسرعة في التوصيل. شكراً لكم!</p>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="review">
+      <h4>سارة من الإسكندرية</h4>
+      <p>الخرائط أنيقة جداً وتناسب ديكور المنزل. أنصح بها بشدة.</p>
+      <div class="stars">★★★★★</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>من نحن</h2>
+    <div class="about">
+      <p>نحن فريق متخصص في تصميم وبيع الخرائط الفنية والعصرية التي تعكس التراث والجغرافيا بأسلوب أنيق ومميز. نقدم منتجات ذات جودة عالية مع اهتمام بالتفاصيل، ونسعى دائمًا لإرضاء عملائنا من خلال تقديم خدمات احترافية وسريعة.</p>
+    </div>
+  </section>
+
+  <section id="payment">
+    <h2>طرق الدفع</h2>
+    <div class="payment">
+      <p>يمكنك الدفع بسهولة من خلال الطرق التالية:</p>
+      <ul>
+        <li><strong>أورنج كاش:</strong> 01212748096</li>
+        <li><strong>تحويل بنكي:</strong> يُرجى التواصل معنا للحصول على التفاصيل</li>
+        <li><strong>الدفع عند الاستلام:</strong> متاح داخل مصر</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <form>
+      <label>الاسم:</label>
+      <input type="text" required>
+
+      <label>البريد الإلكتروني:</label>
+      <input type="email" required>
+
+      <label>رسالتك:</label>
+      <textarea rows="4" required></textarea>
+
+      <button class="submit-btn" type="submit">إرسال الرسالة</button>
+    </form>
+    <p style="text-align: center; margin-top: 20px;">أو تواصل معنا مباشرة على واتساب: <strong><a href="https://wa.me/201212748096" target="_blank">01212748096</a></strong></p>
+  </section>
+</body>
+</html>
